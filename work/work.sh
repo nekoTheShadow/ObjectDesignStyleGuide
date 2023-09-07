@@ -1,0 +1,61 @@
+#!/bin/bash
+
+git init 
+git add 'work/*' && git commit -m 'INITIAL COMMIT' --date 2023/09/07
+git add 'chapter02_exercises01.txt' && git commit -m '第02章 : 練習問題01' --date 2023/09/08
+git add 'chapter02_exercises02.txt' && git commit -m '第02章 : 練習問題02' --date 2023/09/09
+git add 'chapter02_exercises03.txt' && git commit -m '第02章 : 練習問題03' --date 2023/09/10
+git add 'chapter02_exercises04.txt' && git commit -m '第02章 : 練習問題04' --date 2023/09/11
+git add 'chapter02_exercises05.txt' && git commit -m '第02章 : 練習問題05' --date 2023/09/12
+git add 'chapter02_exercises06.txt' && git commit -m '第02章 : 練習問題06' --date 2023/09/13
+git add 'chapter02_exercises07.txt' && git commit -m '第02章 : 練習問題07' --date 2023/09/14
+git add 'chapter02_exercises08.txt' && git commit -m '第02章 : 練習問題08' --date 2023/09/15
+git add 'chapter02_exercises09.txt' && git commit -m '第02章 : 練習問題09' --date 2023/09/16
+git add 'chapter02_exercises10.txt' && git commit -m '第02章 : 練習問題10' --date 2023/09/17
+git add 'chapter03_exercises01.txt' && git commit -m '第03章 : 練習問題01' --date 2023/09/18
+git add 'chapter03_exercises02.txt' && git commit -m '第03章 : 練習問題02' --date 2023/09/19
+git add 'chapter03_exercises03.txt' && git commit -m '第03章 : 練習問題03' --date 2023/09/20
+git add 'chapter03_exercises04.txt' && git commit -m '第03章 : 練習問題04' --date 2023/09/21
+git add 'chapter03_exercises05.txt' && git commit -m '第03章 : 練習問題05' --date 2023/09/22
+git add 'chapter03_exercises06.txt' && git commit -m '第03章 : 練習問題06' --date 2023/09/23
+git add 'chapter03_exercises07.txt' && git commit -m '第03章 : 練習問題07' --date 2023/09/24
+git add 'chapter03_exercises08.txt' && git commit -m '第03章 : 練習問題08' --date 2023/09/25
+git add 'chapter03_exercises09.txt' && git commit -m '第03章 : 練習問題09' --date 2023/09/26
+git add 'chapter03_exercises10.txt' && git commit -m '第03章 : 練習問題10' --date 2023/09/27
+git add 'chapter03_exercises11.txt' && git commit -m '第03章 : 練習問題11' --date 2023/09/28
+git add 'chapter04_exercises01.txt' && git commit -m '第04章 : 練習問題01' --date 2023/09/29
+git add 'chapter04_exercises02.txt' && git commit -m '第04章 : 練習問題02' --date 2023/09/30
+git add 'chapter04_exercises03.txt' && git commit -m '第04章 : 練習問題03' --date 2023/10/01
+git add 'chapter04_exercises04.txt' && git commit -m '第04章 : 練習問題04' --date 2023/10/02
+git add 'chapter04_exercises05.txt' && git commit -m '第04章 : 練習問題05' --date 2023/10/03
+git add 'chapter04_exercises06.txt' && git commit -m '第04章 : 練習問題06' --date 2023/10/04
+git add 'chapter04_exercises07.txt' && git commit -m '第04章 : 練習問題07' --date 2023/10/05
+git add 'chapter04_exercises08.txt' && git commit -m '第04章 : 練習問題08' --date 2023/10/06
+git add 'chapter04_exercises09.txt' && git commit -m '第04章 : 練習問題09' --date 2023/10/07
+git add 'chapter04_exercises10.txt' && git commit -m '第04章 : 練習問題10' --date 2023/10/08
+git add 'chapter04_exercises11.txt' && git commit -m '第04章 : 練習問題11' --date 2023/10/09
+git add 'chapter04_exercises12.txt' && git commit -m '第04章 : 練習問題12' --date 2023/10/10
+git add 'chapter04_exercises13.txt' && git commit -m '第04章 : 練習問題13' --date 2023/10/11
+git add 'chapter05_exercises01.txt' && git commit -m '第05章 : 練習問題01' --date 2023/10/12
+git add 'chapter05_exercises02.txt' && git commit -m '第05章 : 練習問題02' --date 2023/10/13
+git add 'chapter05_exercises03.txt' && git commit -m '第05章 : 練習問題03' --date 2023/10/14
+git add 'chapter06_exercises01.pdf' && git commit -m '第06章 : 練習問題01' --date 2023/10/15
+git add 'chapter06_exercises02.pdf' && git commit -m '第06章 : 練習問題02' --date 2023/10/16
+git add 'chapter06_exercises03.txt' && git commit -m '第06章 : 練習問題03' --date 2023/10/17
+git add 'chapter06_exercises04.pdf' && git commit -m '第06章 : 練習問題04' --date 2023/10/18
+git add 'chapter07_exercises01.pdf' && git commit -m '第07章 : 練習問題01' --date 2023/10/19
+git add 'chapter07_exercises02.pdf' && git commit -m '第07章 : 練習問題02' --date 2023/10/20
+git add 'chapter07_exercises03.pdf' && git commit -m '第07章 : 練習問題03' --date 2023/10/21
+git add 'chapter07_exercises04.pdf' && git commit -m '第07章 : 練習問題04' --date 2023/10/22
+git add 'chapter07_exercises05.pdf' && git commit -m '第07章 : 練習問題05' --date 2023/10/23
+git add 'chapter07_exercises06.pdf' && git commit -m '第07章 : 練習問題06' --date 2023/10/24
+git add 'chapter07_exercises07.pdf' && git commit -m '第07章 : 練習問題07' --date 2023/10/25
+git add 'chapter08_exercises01.pdf' && git commit -m '第08章 : 練習問題01' --date 2023/10/26
+git add 'chapter08_exercises02.pdf' && git commit -m '第08章 : 練習問題02' --date 2023/10/27
+git add 'chapter08_exercises03.pdf' && git commit -m '第08章 : 練習問題03' --date 2023/10/28
+git add 'chapter09_exercises01.pdf' && git commit -m '第09章 : 練習問題01' --date 2023/10/29
+git add 'chapter09_exercises02.txt' && git commit -m '第09章 : 練習問題02' --date 2023/10/30
+git add 'chapter09_exercises03.txt' && git commit -m '第09章 : 練習問題03' --date 2023/10/31
+git add 'chapter09_exercises04.pdf' && git commit -m '第09章 : 練習問題04' --date 2023/11/01
+git add 'chapter09_exercises05.pdf' && git commit -m '第09章 : 練習問題05' --date 2023/11/02
+
