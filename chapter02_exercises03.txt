@@ -1,0 +1,16 @@
+final class FileCache implements Cache
+{
+	private string directory;
+	
+	public function __construct(string directory)
+	{
+		this.directory = directory;
+	}
+	
+	public function get(string cacheKey): string
+	{
+		// ...
+	}
+}
+
+OK
