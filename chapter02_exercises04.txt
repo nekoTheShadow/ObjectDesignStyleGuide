@@ -1,0 +1,22 @@
+final class MySQLTableGateway
+{
+	public function __construct(Config config, string table)
+	{
+		// ...
+	}
+}
+
+final class Config
+{
+	public function __construct(
+		string host,
+		int port,
+		string username,
+		string password,
+		string database,
+	) {
+		// ...
+	}
+}
+
+OK
