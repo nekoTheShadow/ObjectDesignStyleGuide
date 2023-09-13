@@ -1,0 +1,24 @@
+interface EventDispatcher
+{
+	public function dispatch(string eventName): void;
+}
+
+finacl class CsvImporter
+{
+	private EventDispatcher eventDispatcher;
+	
+	public function __construct(EventDispatcher eventDispatcher)
+	{
+		this.eventDispatcher = eventDispatcher; 
+	}
+}
+
+final class NullEventDispatcher implements EventDispatcher
+{
+	public function dispatch(string eventName): void
+	{
+		// Nothing
+	}
+}
+
+OK
