@@ -1,0 +1,53 @@
+final class EventDispatcher
+{
+	private array eventListeners;
+	
+	public function __construct(array eventListeners)
+	{
+		foreach (array_keys(eventListeners) as eventName)
+		{
+			if (!is_string(eventName))
+			{
+				throw new InvalidArgumentException(...);
+			}
+		}
+		foreach (eventListeners as eventListener)
+		{
+			if (!is_callable(eventListener))
+			{
+				throw new InvalidArgumentException(...);
+			}
+		}
+		this.eventListeners = eventListeners:
+	}
+	
+	public function dispatch(object event): void
+	{
+		// ...
+	}
+}
+
+NG: 模範解答
+
+function __construct(array eventListeners)
+{
+	foreach (eventListeners as eventName => listeners)
+	{
+		if (!is_string(eventName))
+		{
+			throw new InvalidArgumentException(...);
+		}
+		if (!is_array(listeners))
+		{
+			throw new InvalidArgumentException(...);
+		}
+		foreach(listeners as listener)
+		{
+			if (!is_callable(listener))
+			{
+				throw new InvalidArgumentException(...);
+			}
+		}
+	}
+	this.eventListeners = eventListeners;
+}
