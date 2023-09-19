@@ -1,0 +1,23 @@
+final class PriceRange
+{
+	public function __construct(int minimumPrice, int maximumPrice)
+	{
+		if (minimumPrice < 0)
+		{
+			throw new InvalidArgumentException(...);
+		}
+		if (maximumPrice < 0)
+		{
+			throw new InvalidArgumentException(...);
+		}
+		if (minimumPrice >= maximumPrice)
+		{
+			throw new InvalidArgumentException(...);
+		}
+		
+		this.minimumPrice = minimumPrice;
+		this.maximumPrice = maximumPrice;
+	}
+}
+
+OK
