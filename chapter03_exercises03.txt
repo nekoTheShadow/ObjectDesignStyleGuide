@@ -1,0 +1,28 @@
+final class CountryCode
+{
+
+	private string countryCode;
+
+	public function __construct(string countryCode)
+	{
+		valid = false;
+		validCountryCodes = ["NL", "GB"];
+		foreach(validCountryCodes as validCountryCode)
+		{
+			if (validCountryCode == countryCode)
+			{
+				valid = true;
+				break;
+			}
+		}
+		
+		if (!valid)
+		{
+			throw new InvalidArgumentException(...);
+		}
+	
+		this.countryCode = countryCode;
+	}
+}
+
+OK
