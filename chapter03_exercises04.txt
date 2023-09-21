@@ -1,0 +1,34 @@
+final class Distance
+{
+	
+	private static validUnits = ["m", "ft"];
+
+	private string unit;
+	private int distance;
+
+	public function __construct(string unit, int distance)
+	{
+		if (!in_array(unit, validUnits))
+		{
+			throw new InvalidArgumentException(...);
+		}
+		if (distance < 0)
+		{
+			throw new InvalidArgumentException(...);
+		}
+		
+		this.unit = unit;
+		this.distance = distance;
+	}
+}
+
+final class Run
+{
+
+	private Distance distance;
+
+	public function __construct(Distance distance)
+	{
+		this.distance = distance;
+	}
+}
