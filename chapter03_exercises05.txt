@@ -1,0 +1,35 @@
+final class PriceRange
+{
+
+	private int minimumPrice;
+	private int maximumPrice;
+
+	public function __construct(int minimumPrice, int maximumPrice)
+	{
+		Assertion.greater(minimumPrice, 0);
+		Assertion.greater(maximumPrice, 0);
+		Assertion.greaterThanOrEqual(minimumPrice, maximumPrice);
+		
+		this.minimumPrice = minimumPrice;
+		this.maximumPrice = maximumPrice;
+	}
+}
+
+NG → 模範解答
+
+final class PriceRange
+{
+
+	private int minimumPrice;
+	private int maximumPrice;
+
+	public function __construct(int minimumPrice, int maximumPrice)
+	{
+		Assertion.greaterThanOrEqual(minimumPrice, 0);
+		Assertion.greaterThanOrEqual(maximumPrice, 0);
+		Assertion.greater(maximumPrice, minimumPrice);
+
+		this.minimumPrice = minimumPrice;
+		this.maximumPrice = maximumPrice;
+	}
+}
