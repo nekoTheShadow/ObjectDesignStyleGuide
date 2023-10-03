@@ -1,0 +1,18 @@
+final class DiscountPercentage { ... }
+
+final class Money
+{
+	private int amountInCents;
+	
+	public static function fromInt(int amountInCents) { ... }
+	
+	public function amountInCents(): int { ... }
+
+	public withDiscountApplied(DiscountPercentage discountPercentage): Money
+	{
+		discount = (int)round(discountPercentage.percentage()/100) * amountInCents;
+		return Moeny.fromInt(amountInCents-discount);
+	}
+}
+
+OK
