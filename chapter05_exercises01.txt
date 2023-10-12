@@ -1,0 +1,10 @@
+public function pop(): Eelement
+{
+	if (count(this.elements) == 0)
+	{
+		throw new RuntimeException("There are no more elements.");
+	}
+	return array_pop(this.elements);
+}
+
+OK
