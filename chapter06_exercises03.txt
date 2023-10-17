@@ -1,0 +1,31 @@
+final class Line
+{
+	private int quantity;
+	private Money tariff;
+	
+	// ...
+	
+	public function amount(): Money
+	{
+		return this.quantity * this.tariff;
+	}
+}
+
+final class Order
+{
+	private array lines = [];
+	
+	// ...
+	
+	public function totalAmount(): Money
+	{
+		totalAmount = new Money(0);
+		for (this.lines as line)
+		{
+			totalAmount = totalAmount.add(line.amount());
+		}
+		return totalAmount;
+	}
+}
+
+OK
