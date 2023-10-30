@@ -1,0 +1,30 @@
+final interface Formatter
+{
+	public format(string message, array context);
+}
+
+final interface Writer
+{
+	public write(line): void
+}
+
+
+final class Logger 
+{
+	private Formatter formatter;
+	private Writer writer;
+
+	public function __construct(Formatter formatter, Writer writer)
+	{
+		this.formatter = formatter;
+		this.writer = writer;
+	
+	}
+
+	public function log (string message, array context): void
+	{
+		this.writer(this.formatter(message, context));
+	}
+}
+
+OK
