@@ -1,0 +1,57 @@
+// 答えをほぼ丸写し
+
+interface LineImporter
+{
+	public function import(int lineNumber, string line): void
+}
+
+interface FileImporter
+{
+	public function import(string file): void
+}
+
+final class DefaultLineImporter implements LineImporter
+{
+	public function import(int lineNumber, string line): void { ... }
+}
+
+final class LoggingLineImporter implements LineImporter
+{
+	public __construct(LineImporter importer, Logger logger) { ... }
+	
+	public function import(int lineNumber, string line): void
+	{
+		this.logger.log( ... );
+		this.importer.import(lineNumber, line);
+		this.logger.log( ... );
+	}
+}
+
+final class LoggingFileImporter implements FileImporter
+{
+	public __construct(FileImporter importer, Logger logger) { ... }
+	
+	public function import(string file): void
+	{
+		this.logger.log( ... );
+		this.importer.import(file);
+		this.logger.log( ... );
+	}
+}
+
+final class CSVFileImporter implements FileImporter
+{
+	public __construct(LineImporter importer) { ... }
+	
+	public function import(string file): void
+	{
+		foreach (linesIn(file) as lineNumber => line)
+		{
+			this.importer(lineNumber, line);
+		}
+	}
+}
+
+
+logger = ...;
+importer = new LoggingFileImporter(new CSVFileImporter(new LoggingLineImporter(new DefaultLineImporter(), logger)), logger);
